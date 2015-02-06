@@ -1,0 +1,337 @@
+> sudo easy_install fabric                                                                                                                                                    master
+Searching for fabric
+Reading http://pypi.python.org/simple/fabric/
+Best match: Fabric 1.10.1
+Downloading https://pypi.python.org/packages/source/F/Fabric/Fabric-1.10.1.tar.gz#md5=596ad28296a264cedef021494bd40cd5
+Processing Fabric-1.10.1.tar.gz
+Running Fabric-1.10.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-LGRMok/Fabric-1.10.1/egg-dist-tmp-m8C5MA
+warning: no previously-included files matching '*' found under directory 'sites/docs/_build'
+warning: no previously-included files matching '*' found under directory 'sites/www/_build'
+warning: no previously-included files matching '*.pyc' found under directory 'tests'
+warning: no previously-included files matching '*.pyo' found under directory 'tests'
+zip_safe flag not set; analyzing archive contents...
+fabric.version: module references __file__
+Adding Fabric 1.10.1 to easy-install.pth file
+Installing fab script to /usr/local/bin
+
+Installed /Library/Python/2.7/site-packages/Fabric-1.10.1-py2.7.egg
+Processing dependencies for fabric
+Searching for paramiko>=1.10
+Reading http://pypi.python.org/simple/paramiko/
+Best match: paramiko 1.15.2
+Downloading https://pypi.python.org/packages/source/p/paramiko/paramiko-1.15.2.tar.gz#md5=6bbfb328fe816c3d3652ba6528cc8b4c
+Processing paramiko-1.15.2.tar.gz
+Running paramiko-1.15.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-xhwJb0/paramiko-1.15.2/egg-dist-tmp-xDVSzG
+zip_safe flag not set; analyzing archive contents...
+Adding paramiko 1.15.2 to easy-install.pth file
+
+Installed /Library/Python/2.7/site-packages/paramiko-1.15.2-py2.7.egg
+Searching for ecdsa>=0.11
+Reading http://pypi.python.org/simple/ecdsa/
+Best match: ecdsa 0.11
+Downloading https://pypi.python.org/packages/source/e/ecdsa/ecdsa-0.11.tar.gz#md5=8ef586fe4dbb156697d756900cb41d7c
+Processing ecdsa-0.11.tar.gz
+Running ecdsa-0.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-LoA7JR/ecdsa-0.11/egg-dist-tmp-35v5m2
+zip_safe flag not set; analyzing archive contents...
+Adding ecdsa 0.11 to easy-install.pth file
+
+Installed /Library/Python/2.7/site-packages/ecdsa-0.11-py2.7.egg
+Searching for pycrypto>=2.1,!=2.4
+Reading http://pypi.python.org/simple/pycrypto/
+Best match: pycrypto 2.6.1
+Downloading https://pypi.python.org/packages/source/p/pycrypto/pycrypto-2.6.1.tar.gz#md5=55a61a054aa66812daf5161a0d5d7eda
+Processing pycrypto-2.6.1.tar.gz
+Running pycrypto-2.6.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-h0iAU2/pycrypto-2.6.1/egg-dist-tmp-H2Uhkg
+src/_fastmath.c:83:13: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+                size = p->ob_size;
+                     ~ ~~~^~~~~~~
+src/_fastmath.c:86:10: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+                size = -p->ob_size;
+                     ~ ^~~~~~~~~~~
+src/_fastmath.c:113:49: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+        int size = (mpz_sizeinbase (m, 2) + SHIFT - 1) / SHIFT;
+            ~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+src/_fastmath.c:1310:12: warning: implicit conversion loses integer precision: 'unsigned long' to 'unsigned int' [-Wshorten-64-to-32]
+                offset = mpz_get_ui (mpz_offset);
+                       ~ ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gmp.h:840:20: note: expanded from macro 'mpz_get_ui'
+#define mpz_get_ui __gmpz_get_ui
+                   ^
+src/_fastmath.c:1360:10: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+                return return_val;
+                ~~~~~~ ^~~~~~~~~~
+src/_fastmath.c:1373:27: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+                rounds = mpz_get_ui (n) - 2;
+                       ~ ~~~~~~~~~~~~~~~^~~
+src/_fastmath.c:1433:9: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+        return return_val;
+        ~~~~~~ ^~~~~~~~~~
+src/_fastmath.c:1545:20: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                        else if (result < 0)
+                                 ~~~~~~ ^ ~
+src/_fastmath.c:1621:20: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                        else if (result < 0)
+                                 ~~~~~~ ^ ~
+9 warnings generated.
+src/_fastmath.c:1545:20: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                        else if (result < 0)
+                                 ~~~~~~ ^ ~
+src/_fastmath.c:1621:20: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                        else if (result < 0)
+                                 ~~~~~~ ^ ~
+2 warnings generated.
+ld: warning: ignoring file /usr/local/lib/libgmp.dylib, file was built for x86_64 which is not the architecture being linked (i386): /usr/local/lib/libgmp.dylib
+In file included from src/MD2.c:147:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+src/MD2.c:44:19: warning: unused variable 'md2_oid' [-Wunused-const-variable]
+static const char md2_oid[] = { 0x06, 0x08, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x02, 0x02 };
+                  ^
+2 warnings generated.
+src/MD2.c:44:19: warning: unused variable 'md2_oid' [-Wunused-const-variable]
+static const char md2_oid[] = { 0x06, 0x08, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x02, 0x02 };
+                  ^
+1 warning generated.
+In file included from src/MD4.c:221:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+1 warning generated.
+In file included from src/SHA256.c:72:
+In file included from src/hash_SHA2_template.c:199:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+1 warning generated.
+In file included from src/SHA224.c:73:
+In file included from src/hash_SHA2_template.c:199:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+1 warning generated.
+In file included from src/SHA384.c:80:
+In file included from src/hash_SHA2_template.c:199:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+1 warning generated.
+In file included from src/SHA512.c:80:
+In file included from src/hash_SHA2_template.c:199:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+1 warning generated.
+In file included from src/RIPEMD160.c:425:
+src/hash_template.c:134:9: warning: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+        size = PyBytes_Size(value);
+             ~ ^~~~~~~~~~~~~~~~~~~
+src/pycrypto_compat.h:39:22: note: expanded from macro 'PyBytes_Size'
+#define PyBytes_Size PyString_Size
+                     ^
+src/RIPEMD160.c:197:20: warning: unused function 'byteswap_digest' [-Wunused-function]
+static inline void byteswap_digest(uint32_t *p)
+                   ^
+2 warnings generated.
+src/RIPEMD160.c:197:20: warning: unused function 'byteswap_digest' [-Wunused-function]
+static inline void byteswap_digest(uint32_t *p)
+                   ^
+1 warning generated.
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1378:42: warning: implicit conversion loses integer precision: 'long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+        *cook    = (*raw0 & 0x00fc0000L) << 6;
+                 ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/libtom/tomcrypt_des.c:1382:42: warning: implicit conversion loses integer precision: 'long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+        *cook    = (*raw0 & 0x0003f000L) << 12;
+                 ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+src/libtom/tomcrypt_des.c:1603:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], pt+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1604:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], pt+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1624:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], ct+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1625:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], ct+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1646:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], pt+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1647:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], pt+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1669:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], ct+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1670:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], ct+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+10 warnings generated.
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1378:42: warning: implicit conversion loses integer precision: 'long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+        *cook    = (*raw0 & 0x00fc0000L) << 6;
+                 ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~
+src/libtom/tomcrypt_des.c:1382:42: warning: implicit conversion loses integer precision: 'long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+        *cook    = (*raw0 & 0x0003f000L) << 12;
+                 ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+src/libtom/tomcrypt_des.c:1603:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], pt+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1604:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], pt+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1624:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], ct+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1625:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], ct+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1646:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], pt+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1647:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], pt+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1669:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[0], ct+0);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from src/DES3.c:26:
+In file included from src/DES.c:32:
+src/libtom/tomcrypt_des.c:1670:5: warning: implicit conversion loses integer precision: 'unsigned long' to 'ulong32' (aka 'unsigned int') [-Wshorten-64-to-32]
+    LOAD32H(work[1], ct+4);
+    ^~~~~~~~~~~~~~~~~~~~~~
+src/libtom/tomcrypt_macros.h:51:48: note: expanded from macro 'LOAD32H'
+           ((unsigned long)((y)[2] & 255)<<8)  | \
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+10 warnings generated.
+src/strxor.c:31:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+static const char rcsid[] = "$Id$";
+                  ^
+1 warning generated.
+src/strxor.c:31:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+static const char rcsid[] = "$Id$";
+                  ^
+1 warning generated.
+src/_counter.c:99:74: warning: implicit conversion loses integer precision: 'long' to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    self->buf_size = PyBytes_GET_SIZE(prefix) + PyBytes_GET_SIZE(suffix) + self->nbytes;
+                   ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+1 warning generated.
+zip_safe flag not set; analyzing archive contents...
+Adding pycrypto 2.6.1 to easy-install.pth file
+
+Installed /Library/Python/2.7/site-packages/pycrypto-2.6.1-py2.7-macosx-10.9-intel.egg
+Finished processing dependencies for fabric
+
+> fab -V                                                                                                                                                                      master
+Fabric 1.10.1
+Paramiko 1.15.2
+
+
+
+
+
+> fab hello                                                                                                                                                                   master
+[localhost] local: echo hello
+hello
+
+Done.
+
+> fab uname                                                                                                                                                                   master
+[localhost] local: uname
+Darwin
+
+Done.
+
+> cat fabfile.py                                                                                                                                                              master
+from fabric.api import local
+
+def hello():
+	local('echo hello')
+
+def uname():
+	local('uname')
