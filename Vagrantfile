@@ -9,4 +9,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=777"]
 # config.vm.provision :shell, :path => "setup.sh"
   config.vm.network :forwarded_port, guest: 80, host: 40080
+  config.vm.network :forwarded_port, guest: 22, host: 2200
 end
