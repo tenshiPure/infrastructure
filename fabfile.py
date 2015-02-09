@@ -7,6 +7,10 @@ env.key_filename = '~/.vagrant.d/insecure_private_key'
 import os
 devnull = open(os.devnull, 'w')
 
+def __os():
+	sudo('cp -p  /usr/share/zoneinfo/Japan /etc/localtime')
+	sudo('date +"%Y-%m-%d_%k-%M-%S"')
+
 def __yum():
 	sudo('yum update -y', stdout = devnull)
 	sudo('yum install -y yum-cron', stdout = devnull)
@@ -103,6 +107,7 @@ def __sshd():
 
 
 def vagrant():
+	__os()
 	__yum()
 	__service()
 	__firewall()
