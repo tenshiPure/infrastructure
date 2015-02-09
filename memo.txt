@@ -1,11 +1,1 @@
-- 転送
-	- 手元に一度持ってくる
-	- 手元にgitが必要
-
-- clone
-	- gitが必要
-
-
-
-
-git clone https://github.com/tenshiPure/infrastructure.git `date +"%Y-%m-%d_%k-%M-%S"`
+abc
