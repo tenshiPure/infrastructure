@@ -1,4 +1,5 @@
-from fabric.api import env, run, sudo
+from fabric.api import env, run, sudo, hide
+from envassert import detect, process, service, port, package, file
 
 env.hosts = ['vagrant@127.0.0.1']
 env.port = '2200'
@@ -127,3 +128,31 @@ def deploy():
 	run('git clone https://github.com/tenshiPure/infrastructure.git %(htmldir)s/%(datetime)s' % locals(), stdout = devnull)
 	run('unlink %(htmldir)s/index.php' % locals())
 	run('ln -s %(htmldir)s/%(datetime)s/index.php %(htmldir)s/index.php' % locals())
+
+
+def test():
+	env.platform_family =  detect.detect()
+
+	with hide('everything'):
+		assert 'JST' in run('date')
+
+	assert package.installed('yum-cron.noarch')
+#	assert process.is_up('yum-cron')
+#	assert service.is_enabled('yum-cron')
+
+#	assert process.is_down('postfix')
+#	assert service.is_enabled('postfix')
+
+	assert port.is_listening('22')
+	assert port.is_listening('80')
+
+	assert package.installed('httpd.x86_64')
+	assert process.is_up('httpd')
+#	assert service.is_enabled('httpd')
+
+	assert file.has_line('/etc/httpd/conf/httpd.conf', 'ServerTokens Prod')
+
+	assert process.is_up('sshd')
+#	assert service.is_enabled('sshd')
+
+#	assert file.has_line('/etc/ssh/sshd_config', 'PermitRootLogin no')
