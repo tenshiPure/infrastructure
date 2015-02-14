@@ -4,7 +4,13 @@ from fabric.decorators import task
 from modules.test import jst, services, ports, lines
 
 @task
-def test():
+def minimum():
+	jst()
+
+	ports.open(['22', '80'])
+
+@task
+def full():
 	jst()
 
 	services.installed(['yum-cron', 'httpd.x86_64'])

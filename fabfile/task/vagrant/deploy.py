@@ -4,7 +4,7 @@ from fabric.decorators import task
 from modules.deploy import clone, now, relink
 
 @task
-def deploy():
+def php():
 	rootdir = '/var/www/html'
 	datetime = now()
 
