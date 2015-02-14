@@ -1,5 +1,6 @@
 import sys
-sys.path.append('/Users/ryo/Development/infrastructure/fabfile')
+import os.path
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from fabric.api import env
 
