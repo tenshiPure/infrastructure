@@ -95,7 +95,9 @@ Available commands:
     vagrant_1.deploy.php
     vagrant_1.test.full
     vagrant_1.test.minimum
-    vagrant_2.construct.minimum
+    vagrant_2.construct.dev
+    vagrant_2.construct.test
+    vagrant_2.construct.prod
 ```
 ##雑記
 ###pycファイルを作らない
