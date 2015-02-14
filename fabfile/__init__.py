@@ -1,1 +1,3 @@
-from task.vagrant import construct, deploy, test
+import vagrant.construct
+import vagrant.deploy
+import vagrant.test
