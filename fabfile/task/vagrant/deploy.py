@@ -1,4 +1,4 @@
-from fabric.api import run, sudo
+from fabric.api import run, sudo, hide
 from fabric.decorators import task
 
 @task
@@ -9,8 +9,9 @@ def deploy():
 		sudo('yum install -y git', stdout = devnull)
 
 	htmldir = '/var/www/html'
-	datetime = run('date +"%Y-%m-%d_%k-%M-%S"')
+	datetime = run("python -c \"import datetime; print datetime.datetime.today().strftime('%Y-%m-%d_%H-%M-%S')\"")
 
-	run('git clone https://github.com/tenshiPure/infrastructure.git %(htmldir)s/%(datetime)s' % locals(), stdout = devnull)
+	with hide('stdout'):
+		run('git clone https://github.com/tenshiPure/infrastructure.git %(htmldir)s/%(datetime)s' % locals())
 	run('unlink %(htmldir)s/index.php' % locals())
-	run('ln -s %(htmldir)s/%(datetime)s/index.php %(htmldir)s/index.php' % locals())
+	run('ln -s %(htmldir)s/%(datetime)s/sample-src/index.php %(htmldir)s/index.php' % locals())
